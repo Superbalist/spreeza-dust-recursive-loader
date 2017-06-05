@@ -1,0 +1,17 @@
+{> "layouts/default" /}
+
+{<title}Test Title{/title}
+{<content}
+    {>"simple" /}
+    {>"simple" /}
+    {>"simple" /}
+    {>"simple" /}
+    {>"simple" /}
+    {>"simple" /}
+    {>"simple" /}
+    {>"simple" /}
+    {>"simple" /}
+    {>"simple" /}
+    {>"simple" /}
+    {>"simple" /}
+{/content}
