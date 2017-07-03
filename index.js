@@ -1,3 +1,4 @@
+/* global dust*/
 const dust = require("dustjs-linkedin")
 const path = require("path")
 const fs = require("fs")
@@ -29,7 +30,7 @@ function recursiveCompile(src, name, rootPath, isPartial = false) {
         this.addDependency(templateSource);
     }
 
-    return `${dependencies.join("")};${compiledSrc};module.exports = ${isPartial ? null : `function(context,callback=()=>{}){dust.render('${name}',context,callback);};`}`
+    return `${dependencies.join("")};${compiledSrc};module.exports = ${isPartial ? null : `function(context,callback){dust.render('${name}',context,callback);};`}`
 }
 
 function loader(source) {
